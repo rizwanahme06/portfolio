@@ -1,0 +1,15 @@
+{
+    "SocialIcon":[
+        {
+            "icon":"Facebook"
+        },{
+            "icon":"Github"
+        },{
+            "icon":"Instagram"
+        },{
+            "icon":"Linkedin"
+        },{
+            "icon":"Twitter"
+        }
+    ]
+}
