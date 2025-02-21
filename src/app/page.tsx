@@ -6,7 +6,6 @@ import SkillChart from "@/component/Chart";
 import ProjectList from '@/data/home/projects.json'
 import SocialIcon from '@/data/home/socialIcon.json'
 import Link from "next/link";
-import { Footer } from "@/component/footer/Footer";
 
 const Home = () => {
   return (
@@ -119,7 +118,6 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <Footer/>
 
     </>
   );
