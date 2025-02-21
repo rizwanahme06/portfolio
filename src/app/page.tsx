@@ -5,6 +5,7 @@ import Image from "next/image";
 import SkillChart from "@/component/Chart";
 import ProjectList from '@/data/home/projects.json'
 import SocialIcon from '@/data/home/socialIcon.json'
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -80,6 +81,8 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {ProjectList?.ProjectDetails?.map((data, index) => (
             <div key={index} className="border border-siteSecondaryColor rounded-lg overflow-hidden">
+              <Link href={data.href} legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
               <div className="relative w-full aspect-[4/3]">
                 <Image src={`/images/works/${data?.image}.png`} alt={data?.title} fill className="rounded-lg object-cover" />
               </div>
@@ -87,6 +90,8 @@ const Home = () => {
                 <h2 className="text-xl font-bold mb-2">{data?.title}</h2>
                 <p className="text-lg">{data?.subtitle}</p>
               </div>
+              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -103,7 +108,13 @@ const Home = () => {
         <p className="text-lg text-white mt-8">Stay Connected – Let&apos;s Innovate and Collaborate!</p>
         <div className="flex justify-center gap-6 mt-6">
           {SocialIcon.SocialIcon.map((data, index) => (
-            <Image key={index} src={`/images/icon/${data?.icon}.svg`} alt="socialIcon" width={24} height={24} />
+            <div key={index}>
+            <Link href={data.href} legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">
+            <Image src={`/images/icon/${data?.icon}.svg`} alt="socialIcon" width={24} height={24} />
+            </a>
+            </Link>
+            </div>
           ))}
         </div>
       </section>
