@@ -47,12 +47,12 @@ const Home = () => {
             <Image src="/images/working.png" alt="profileImage" width={350} height={400} className="rounded-lg" />
           </div>
           <div className="w-full md:w-1/2">
-            <h3 className="siteSectionHeading mb-6">About Us</h3>
+            <h3 className="siteSectionHeading mb-6 text-center md:text-left">About Us</h3>
             <p className="text-lg leading-7 mb-6">
               We specialize in crafting high-quality web applications, websites, and custom software solutions designed 
               to help small entrepreneurs thrive in the digital world.
             </p>
-            <h4 className="text-xl font-semibold mb-4">Why Choose Us?</h4>
+            <h4 className="text-xl font-semibold mb-4 text-left md:text-left">Why Choose Us?</h4>
             <ul className="space-y-4 text-lg">
               <li>✅ <strong>Custom Solutions:</strong> Tailored software and web applications for your needs.</li>
               <li>✅ <strong>Entrepreneur-Focused:</strong> Budget-friendly solutions for small businesses.</li>
@@ -81,7 +81,7 @@ const Home = () => {
           {ProjectList?.ProjectDetails?.map((data, index) => (
             <div key={index} className="border border-siteSecondaryColor rounded-lg overflow-hidden">
               <div className="relative w-full aspect-[4/3]">
-                <Image src={`/images/works/${data?.image}.png`} alt={data?.title} layout="fill" objectFit="cover" className="rounded-lg" />
+                <Image src={`/images/works/${data?.image}.png`} alt={data?.title} fill className="rounded-lg object-cover" />
               </div>
               <div className="p-5 text-white">
                 <h2 className="text-xl font-bold mb-2">{data?.title}</h2>
