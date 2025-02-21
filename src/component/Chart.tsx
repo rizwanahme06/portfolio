@@ -119,9 +119,13 @@ const SkillChartStacked = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto h-[100dvh] p-6 bg-[#0F172A] rounded-lg">
-      <Bar data={chartData} options={options} />
+    <div className="w-full max-w-4xl mx-auto h-[800px] p-6 bg-[#0F172A] rounded-lg">
+    {/* Ensure Bar Chart Container has a fixed height */}
+    <div className="relative h-full">
+      <Bar data={chartData} options={options} style={{height:"500px"}}/>
     </div>
+  </div>
+
   );
 };
 
