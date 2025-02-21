@@ -9,7 +9,7 @@ export function Footer() {
     return(
         <>
         {/* Contact Section */}
-      <footer className="bg-siteSecondaryColor py-[40px] md:py-[80px] px-5 text-center">
+      <section className="bg-siteSecondaryColor py-[40px] md:py-[80px] px-5 text-center">
         <h1 className="text-2xl font-semibold text-white mb-6">Let&apos;s Work Together</h1>
         <p className="text-lg text-white mb-8">Got a project in mind? Let&apos;s connect!</p>
         <div className="flex flex-col md:flex-row justify-center gap-3 max-w-md mx-auto bg-sitePrimaryColor p-4 rounded-lg">
@@ -28,7 +28,7 @@ export function Footer() {
             </div>
           ))}
         </div>
-      </footer>
+      </section>
         </>
     )
 }
