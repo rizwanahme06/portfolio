@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-sitePrimaryColor py-16 px-5 text-center">
+      <section className="bg-sitePrimaryColor py-[40px] md:py-[80px] px-5 text-center">
         <div className="container mx-auto">
           <div className="rounded-full w-fit bg-siteText p-5 mx-auto mb-12">
             <Image src="/images/profile.png" alt="profileImage" width={150} height={150} />
@@ -26,7 +26,7 @@ const Home = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="bg-sitePrimaryColor py-16 px-5 text-center">
+      <section className="bg-sitePrimaryColor py-[40px] md:py-[80px] px-5 text-center">
         <div className="container mx-auto max-w-3xl">
           <h3 className="siteSectionHeading mb-6">Our Mission</h3>
           <p className="text-lg text-white leading-7 mb-6">
@@ -40,9 +40,8 @@ const Home = () => {
           </p>
         </div>
       </section>
-
       {/* About Us Section */}
-      <section className="bg-sitePrimaryColor py-16 px-5">
+      <section className="bg-sitePrimaryColor py-[40px] md:py-[80px] px-5">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 text-white">
           <div className="w-full md:w-1/2 flex justify-center">
             <Image src="/images/working.png" alt="profileImage" width={350} height={400} className="rounded-lg" />
@@ -64,9 +63,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Skills & Tech Stack */}
-      <section className="bg-sitePrimaryColor py-16 text-center">
+      <section className="bg-sitePrimaryColor py-[40px] md:py-[80px] text-center">
         <div className="container mx-auto">
 
         <h3 className="siteSectionHeading mb-6">Skills & Tech Stack</h3>
@@ -75,9 +73,8 @@ const Home = () => {
         </div>
         </div>
       </section>
-
       {/* Projects Section */}
-      <section className="bg-sitePrimaryColor px-5 text-center py-[80px]">
+      <section className="bg-sitePrimaryColor px-5 text-center py-[40px] md:py-[80px]">
         <div className="container mx-auto">
         <h3 className="siteSectionHeading mb-8">Projects</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -95,9 +92,8 @@ const Home = () => {
         </div>
         </div>
       </section>
-
       {/* Contact Section */}
-      <section className="bg-siteSecondaryColor py-[80px] px-5 text-center">
+      <section className="bg-siteSecondaryColor py-[40px] md:py-[80px] px-5 text-center">
         <h1 className="text-2xl font-semibold text-white mb-6">Let&apos;s Work Together</h1>
         <p className="text-lg text-white mb-8">Got a project in mind? Let&apos;s connect!</p>
         <div className="flex flex-col md:flex-row justify-center gap-3 max-w-md mx-auto bg-sitePrimaryColor p-4 rounded-lg">
