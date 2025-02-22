@@ -21,7 +21,9 @@ const Home = () => {
             Crafting Scalable Web Applications, Software, & Automation Solutions
           </h1>
           <button className="bg-siteSecondaryColor rounded-md text-lg text-white py-3 px-6 tracking-wide">
+            <Link href={"#project"}>
             View My Work
+            </Link>
           </button>
         </div>
       </section>
@@ -45,7 +47,7 @@ const Home = () => {
       <section className="bg-sitePrimaryColor py-[40px] md:py-[80px] px-5" id="about">
         <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 text-white">
           <div className="w-full md:w-1/2 flex justify-center">
-            <Image src="/images/working.png" alt="profileImage" width={350} height={400} className="rounded-lg" />
+            <Image src="/images/working1.png" alt="profileImage" width={350} height={400} className="rounded-lg" />
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="siteSectionHeading mb-6 text-center md:text-left">About Us</h3>
