@@ -71,7 +71,7 @@ const Header = () => {
             <Link
               key={index}
               href={item.href}
-              className="text-white hover:text-gray-300 transition"
+              className="nav-center mb-4"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

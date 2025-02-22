@@ -53,7 +53,7 @@
 }
 
 .side-button {
-  @apply flex md:hidden text-white max-w-[40px] w-[40px];
+  @apply flex md:hidden text-white max-w-[30px] w-[30px];
 }
 
 .nav {
@@ -67,4 +67,8 @@
 
 .width0 {
   @apply hidden;
+}
+
+.nav-center {
+  @apply text-white hover:text-gray-300 transition w-full m-auto py-5 border-b border-e-white text-[20px] font-semibold sitepoppinsfont;
 }
