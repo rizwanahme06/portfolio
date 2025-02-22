@@ -52,3 +52,19 @@
   @apply py-4 px-2 bg-siteSecondaryColor border border-sitePrimaryColor rounded-[10px];
 }
 
+.side-button {
+  @apply flex md:hidden text-white w-[50px];
+}
+
+.nav {
+  @apply hidden md:flex items-center;
+}
+
+.width100 {
+  @apply absolute w-full h-[100%] z-10;
+  transition: width 0.3s ease-in;
+}
+
+.width0 {
+  @apply hidden;
+}
