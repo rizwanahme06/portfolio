@@ -22,13 +22,15 @@ const Header = () => {
   return (
     <header className="site-parent-class ">
       <div className="site-main-container mx-auto">
+        <Link href="/">
         <Image
-          src="/images/logo/logo.png"
+          src="/images/logo/logo2.png"
           alt="Logo"
           height={100}
           width={100}
-          className=""
+          className="max-w-[70px] md:max-w-[100px] lg:max-w-[150]"
         />
+        </Link>
         <nav className="nav">
           {navigation.map((data, index) => (
             <div key={index} className="px-5 py-3">

@@ -42,7 +42,7 @@
 }
 
 .site-main-container {
-  @apply container py-5 px-14 flex text-[#f2f2f2];
+  @apply container px-4 py-2 md:py-5 md:px-14 flex text-[#f2f2f2];
 
   align-items: center;
   justify-content: space-between;
@@ -53,7 +53,7 @@
 }
 
 .side-button {
-  @apply flex md:hidden text-white w-[50px];
+  @apply flex md:hidden text-white max-w-[40px] w-[40px];
 }
 
 .nav {
