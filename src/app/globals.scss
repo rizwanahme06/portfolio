@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .siteNameHeading{
-  @apply text-[20px] font-semibold  text-[#f2f2f2]
+  @apply text-[20px] font-semibold  text-[#f2f2f2];
 }
 
 .sitepoppinsfont{
@@ -17,7 +18,7 @@
 }
 
 .siteHeroHeading {
-  @apply text-[52px] font-light text-center text-[#f2f2f2]
+  @apply text-[52px] font-light text-center text-[#f2f2f2];
 }
 
 .siteParagraph {
@@ -25,7 +26,7 @@
 }
 
 .siteSectionHeading {
-  @apply text-[24px] font-semibold tracking-[5%] text-[#f2f2f2]
+  @apply text-[24px] font-semibold tracking-[5%] text-[#f2f2f2];
 }
 .email-enter{
 //  background: rgba(15, 23, 42, 0.447059);
@@ -33,6 +34,21 @@
   border-radius: 50px;
 }
 .buttonClass {
-  @apply py-[12px] px-[12px] md:px-[16px] font-semibold text-base leading-[20px] cursor-not-allowed opacity-50 text-[#f2f2f2] rounded-3xl
+  @apply py-[12px] px-[12px] md:px-[16px] font-semibold text-base leading-[20px] cursor-not-allowed opacity-50 text-[#f2f2f2] rounded-3xl;
+}
+
+.site-parent-class {
+  @apply bg-sitePrimaryColor ;
+}
+
+.site-main-container {
+  @apply container py-5 px-14 flex text-[#f2f2f2];
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-button {
+  @apply py-4 px-2 bg-siteSecondaryColor border border-sitePrimaryColor rounded-[10px];
 }
 
