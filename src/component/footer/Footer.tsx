@@ -5,6 +5,7 @@ import Image from "next/image"
 import SocialIcon from '@/data/home/socialIcon.json'
 import {useForm,SubmitHandler} from 'react-hook-form'
 import { useState } from "react"
+// import sendData from '@/component/footer/api/sendEmail'
 
 
 
@@ -28,12 +29,13 @@ export function Footer() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch("/api/sendEmail", {
+      const response = await fetch('/sendEmail', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email: data?.email }),
+        body: 
+        JSON.stringify({ email: data?.email }),
       });
   
       const result = await response.json();
@@ -41,18 +43,16 @@ export function Footer() {
   
       reset();
       setSuccessAlert(true);
-      setTimeout(() => setSuccessAlert(false), 2000);
+      setTimeout(() => setSuccessAlert(false), 3000);
     } catch (error) {
-      setErrorMessage("Failed to send email. Please try again.");
+      alert(error)
+      setErrorMessage(`Failed to send email: ${error}.`);
       console.error("Error:", error);
     } finally {
       setFormLoading(false);
     }
   
   }
-
-  // console.log(watch("email")) // watch input value by passing the name of it
-
 
     return(
         <>
@@ -77,7 +77,7 @@ export function Footer() {
           <button type="submit" className="bg-siteSecondaryColor py-2 px-4 rounded-md text-white" disabled={!isValid || formLoading }>{formLoading ? "Submitting..." :"Let's Connect"}</button>
         </div>
         {successAlert && <p className="text-[14px] text-green-500">{successAlert}</p> }
-        {errors.email && <p className="text-[14px] text-red-500">{errorMessage}</p>}
+        {errors.email && <p className="text-[18px] text-red-500 ">{errorMessage}</p>}
         </form>
         <div className="siteDivider ">OR</div>
         <Link href="tel:+919321983228" className="siteContactLink">Contact:- +91-9321983228</Link>
