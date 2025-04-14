@@ -95,6 +95,7 @@ export function Footer() {
         </div>
         </div>
       </section>
+      <h5 className="bg-sitePrimaryColor text-white font-bold p-4 text-center">Powered by <span className="font-light">DevHook Studio</span></h5>
         </>
     )
 }
